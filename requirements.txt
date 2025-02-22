@@ -1,5 +1,5 @@
 ibm-watsonx-ai
-langchain-ibm
+ibm-generative-ai[langchain]
 langchain
 langchain_community
 gradio

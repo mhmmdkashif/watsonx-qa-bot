@@ -1,6 +1,6 @@
-from ibm_watsonx_ai.foundation_models import ModelInference
-from ibm_watsonx_ai.metanames import GenTextParamsMetaNames as GenParams
-from ibm_watsonx_ai.metanames import EmbedTextParamsMetaNames
+from ibm_watson_machine_learning.foundation_models import ModelInference
+from ibm_watson_machine_learning.metanames import GenTextParamsMetaNames as GenParams
+from ibm_watson_machine_learning.metanames import EmbedTextParamsMetaNames
 from langchain_ibm import WatsonxLLM, WatsonxEmbeddings
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.vectorstores import Chroma

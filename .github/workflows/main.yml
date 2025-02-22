@@ -21,8 +21,15 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install --upgrade ibm-watsonx-ai
+          pip install ibm-watsonx-ai==1.0.1  # Try a specific version
           pip install -r requirements.txt
+
+      - name: Check installed ibm-watsonx-ai version
+        run: pip show ibm-watsonx-ai
+
+      - name: List files in ibm_watsonx_ai/foundation_models
+        run: |
+          ls -l /opt/hostedtoolcache/Python/3.9.21/x64/lib/python3.9/site-packages/ibm_watsonx_ai/foundation_models/
 
       - name: Run QA Bot
         run: |
